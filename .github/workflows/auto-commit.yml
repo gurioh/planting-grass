@@ -9,4 +9,9 @@ jobs:
   task:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - uses: actions/checkout@v2
+      - name: 1) Test 
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: 2) Exectue test
+        run: echo "Test commit" >> notepad.txt && cat notepad.txt
+      
