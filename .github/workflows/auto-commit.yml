@@ -3,7 +3,7 @@ name: planting-grass
 # [크론스케쥴러]
 on:
   schedule:
-    - cron: '/1 * * * *'
+    - cron: '*/1'
     
 jobs:
   task:
