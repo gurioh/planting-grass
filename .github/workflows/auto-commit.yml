@@ -14,5 +14,5 @@ jobs:
           git config user.name guriOH
           git config user.email stockhoon5@gmail.com
           git add .
-          git commit -m "${{date}}"
+          git commit -m "Test"
           git push
