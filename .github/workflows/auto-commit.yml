@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          echo "date" > generated.txt
+          echo "date" >> generated.txt
           git config user.name guriOH
           git config user.email stockhoon5@gmail.com
           git add .
